@@ -3,7 +3,7 @@
 
 
 credit = 100
-prices = [5, 75, 25]
+prices = [75, 20, 25]
 
 i=0
 j=0

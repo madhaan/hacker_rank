@@ -9,6 +9,8 @@ puts "intersection values #{array}"
 
 hackerrank = {32=>12 , 23=>12}
 hackerrank.store( 543121 , 100 )
+hackerrank[20] = 12
 puts"#{hackerrank}"
 hackerrank.keep_if {|key, value| key % 2 == 0}
-hackerrank.delete_if {|key, value| key % 2 != 0}
+# hackerrank.delete_if {|key, value| key % 2 != 0}
+puts"#{hackerrank}"

@@ -1,10 +1,16 @@
 class Input
   def parse
-    puts "enter credit"
-    credit = gets.to_i
-    puts "enter the prices"
-    prices = gets.strip.split(" ").map(&:to_i)
-    Store.new(credit, prices)
+    inputs = []
+    puts "enter n element"
+    n = gets.to_i
+    n.times do |x| 
+      puts "enter credit"
+      credit = gets.to_i
+      puts "enter the prices"
+      prices = gets.strip.split(" ").map(&:to_i)
+      inputs << Store.new(credit, prices)
+    end
+    inputs
   end
 end
 
@@ -43,9 +49,12 @@ end
 
 
 input_parser = Input.new
-store = input_parser.parse
-puts store.to_s 
-indices = store.calculate
-puts "selected indices #{indices}"
+stores = input_parser.parse
+stores.each do |store|
+  indices = store.calculate
+  puts "selected indices #{indices}"
+end
+
+
 
 

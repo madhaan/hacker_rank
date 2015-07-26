@@ -1,4 +1,4 @@
-input = "this is a test"
+input = "this i a test"
 
 class ReverseWords
   def initialize(input)
@@ -16,7 +16,6 @@ class ReverseWords
       reversed_words[i] = splitted_words[j]
       i += 1
       j = j - 1
-
     end 
     puts "#{reversed_words}"
     reversed_words.join(" ")

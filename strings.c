@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void main()
+int main()
 {
    char c[10]="am madhan";
    char ch[10]="madhan";
